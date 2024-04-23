@@ -1,0 +1,215 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    border-bottom: dashed 10px #fdb51a;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    background-color: #f4f2e4
+  }
+
+  input {
+    width: 75%;
+    padding: 12px 20px;
+    margin: 8px 20px;
+    box-sizing: border-box;
+    font-size: 18px;
+    align-content: right;
+  }
+  
+  input:focus {
+    outline: none;
+  }
+  
+  header div p {
+    font-size: 15px;
+  }
+
+
+  button {
+    padding: 10px;
+    margin: 24px;
+    cursor: pointer;
+    font-size: 24px;
+    background-color: #ffd760;
+    color: rgb(81, 78, 78);
+  }
+  .container-body {
+    width: 100%;
+    display: flex;
+  }
+
+  .container-left {
+    margin: 10px 10px 10px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 40%;
+    background-color: #fbefd5;
+    border-right: dashed 5px #fdb51a;
+  }
+
+  body.dark .container-left {
+    background-color:#282a2d;
+    border-right: dashed 5px darkgrey;
+  }
+
+  .container-right {
+    margin: 10px 10px 0 10px;
+    text-align: center;
+    align-content: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 60%;
+    background-color: #fbefd5;
+    border-left: dashed 5px #fdb51a;
+  }
+
+  body.dark .container-right {
+    background-color:#282a2d;
+    border-left: dashed 5px darkgrey;
+  }
+
+  body.dark header {
+    border-bottom: dashed 10px darkgrey;
+  }
+
+  body.dark button {
+    background-color: darkgrey;
+  }
+
+  .container-right:hover {
+    color: #db750f;
+}
+.container-left:hover {
+    color: #ead041;
+}
+
+  .form::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+
+  ul {
+    text-align: left;
+    list-style-type: none;
+  }
+
+/* **this is for the dark-light event listener button** */
+
+.toggle {
+    border-style: outset;
+    width: 400px;
+    background-color: rgba(193, 144, 72, 0.15);
+    
+  }
+  
+  /* Dark Mode */
+  .dark {
+    background-color:#243447;
+    height: 100vh;
+    color: #bebebe  
+  }
+  
+  .dark li a {
+    color: #bebebe;
+  }
+  
+  .dark li a:hover {
+    background-color: #111;
+  }
+  
+  /* Light Mode */
+  .light {
+    background-color: #f0ead6;
+    color: black;
+    height: 100vh;
+  }
+  
+  .light li a {
+    color: black;
+  }
+  
+  .light li a:hover {
+    background-color: rgb(29, 128, 210);
+  }
+  
+  /* Styling the Switch button */
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
+  
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #111;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: rgb(29, 128, 210);
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px rgb(29, 128, 210);
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  .row {
+    margin: 20px;
+    display: flex;
+  }
+  .col {
+    margin: 20px;
+  }
+  
+  

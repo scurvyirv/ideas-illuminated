@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ideas Illuminated</title>
+    <link rel="stylesheet" href="./assets/CSS/style.css">
+</head>
+
+<body>
+    <!-- this is the header that includes the dark/light responsive element -->
+    <header>
+        <div class="row toggle">
+            <div class="col">
+                <p>&#127773 light mode</p>
+            </div>
+            <label class="switch col">
+                <input type="checkbox" id="theme-switcher">
+                <span class="slider round"></span>
+            </label>
+            <div class="col">
+                <p>dark mode &#127770</p>
+            </div>
+        </div>
+    </header>
+    <!-- this is the left side of the first page -->
+    <section class="container-body">
+        <div class="container-left">
+            <h1>Ideas Illuminated</h1>
+                <h3>by Irv</h3>
+            <div class="lightbulb-gif">
+                <img 
+                    src="./assets/images/lightbulb.gif", alt="this is a lightbulb gif" />
+            </div>
+        </div>
+    <!-- this is the right side of the first page -->
+        <div class="container-right">
+            <h1>Shed some light on your ideas. What's on your mind?</h1>
+            <form id="form"> <!-- this is the form for content entry -->
+                <ul>
+                    <li>
+                        <label for="Username">Username</label>
+                        <input type="text" id="username-entry" placeholder="enter username here" />
+                    </li>
+                    <li>
+                        <label for="Title">Title</label>
+                        <input type="text" id="title-entry" placeholder="enter title here" />
+                    </li>
+                    <li>
+                        <label for="Content">Content</label>
+                        <input type="text" id="content-entry" placeholder="enter content here" />
+                    </li>
+                </ul>
+                <button id="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="./assets/JS/script.js"></script>
+</body>
+</html>
