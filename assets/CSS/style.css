@@ -71,6 +71,8 @@ body {
     border-left: dashed 5px #fdb51a;
   }
 
+  /* dark light properties on body containers */
+
   body.dark .container-right {
     background-color:#282a2d;
     border-left: dashed 5px darkgrey;
@@ -90,6 +92,9 @@ body {
 .container-left:hover {
     color: #ead041;
 }
+
+
+/* miscellaneous */
 
   .form::after {
     content: " ";
